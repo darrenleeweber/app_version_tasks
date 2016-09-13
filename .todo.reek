@@ -1,0 +1,17 @@
+---
+ControlParameter:
+  exclude:
+  - AppVersionTasks::Configuration#application_name=
+  - AppVersionTasks::Configuration#git_working_directory=
+  - AppVersionTasks::Configuration#version_file_path=
+UtilityFunction:
+  exclude:
+  - AppVersionTasks::Configuration#default_root_path
+  - AppVersionTasks::SemanticVersionFile#path
+  - AppVersionTasks::SemanticVersionFile#version_template
+NilCheck:
+  exclude:
+  - AppVersionTasks::SemanticVersion#git_release_branch?
+TooManyMethods:
+  exclude:
+  - AppVersionTasks::SemanticVersion

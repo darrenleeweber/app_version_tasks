@@ -1,0 +1,11 @@
+/.bundle/
+/.gems/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/spec/internal/config/version.rb
+/spec/internal/.gitignore
+/tmp/

@@ -1,0 +1,32 @@
+engines:
+  brakeman:
+    enabled: false
+  bundler-audit:
+    enabled: true
+  csslint:
+    enabled: false
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+  fixme:
+    enabled: true
+  reek:
+    enabled: true
+  rubocop:
+    enabled: true
+ratings:
+  paths:
+  - Gemfile.lock
+  - "**.rb"
+  - "**.rake"
+exclude_paths:
+- .binstubs/
+- .bundle/
+- .gems/
+- .git/
+- bin/
+- coverage/
+- pkg/
+- spec/
