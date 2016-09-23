@@ -1,5 +1,6 @@
 require 'app_version_tasks/version'
 require 'app_version_tasks/configuration'
+require 'app_version_tasks/semantic_version'
 
 # Manage and release application semantic versions
 module AppVersionTasks
