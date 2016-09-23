@@ -78,21 +78,29 @@ the single quotes around the version string are an important assumption.
                        - does not push the local workspace to 'origin'
     version:bump:patch - bump and commit the patch version (z in x.y.z)
                        - does not push the local workspace to 'origin'
+    version:current    - the current version
     version:release    - tag and push the current version
                        - pushes to 'origin/{current_branch}'
 
+#### Report the current version
+
+    bundle exec rake version:current
+
 #### Bump and commit a patch version
 
+    # Example: 0.0.0 moves to 0.0.1
     # Example: 1.1.1 moves to 1.1.2
     bundle exec rake version:bump:patch
 
 #### Bump and commit a minor version
 
+    # Example: 0.0.1 moves to 0.1.0
     # Example: 1.1.2 moves to 1.2.0
     bundle exec rake version:bump:minor
 
 #### Bump and commit a major version
 
+    # Example: 0.1.0 moves to 1.0.0
     # Example: 1.2.0 moves to 2.0.0
     bundle exec rake version:bump:major
 
