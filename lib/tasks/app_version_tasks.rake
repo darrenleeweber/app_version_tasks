@@ -1,5 +1,11 @@
 
 namespace :version do
+  desc 'report the current version'
+  task current: :environment do
+    ver = AppVersionTasks::SemanticVersion.new
+    puts ver.version
+  end
+
   desc 'add and push a release tag for the current version'
   task release: :environment do
     ver = AppVersionTasks::SemanticVersion.new
