@@ -2,6 +2,7 @@
 /.gems/
 /.yardoc
 /_yardoc/
+/config/version.rb
 /coverage/
 /doc/
 /pkg/
