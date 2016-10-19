@@ -42,6 +42,9 @@ describe AppVersionTasks::SemanticVersionFile do
       result = subject.version_parts[2]
       expect(result).to eq(2)
     end
+    it 'raises exception when given arg that does not match semantic version' do
+      expect { subject.write('xyz') }.to raise_error
+    end
   end
 
   describe '#version' do
