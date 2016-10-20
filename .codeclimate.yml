@@ -16,6 +16,8 @@ engines:
     enabled: true
   rubocop:
     enabled: true
+    exclude_fingerprints:
+    - 5a32d66f61ea18f2f75921056fc89593
 ratings:
   paths:
   - Gemfile.lock
