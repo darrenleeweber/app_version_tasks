@@ -100,7 +100,7 @@ module AppVersionTasks
 
     def git_push
       current_branch = git_current_branch
-      git.push('origin', current_branch)
+      git.push('origin', current_branch, tags: true)
       puts "Pushed to origin/#{current_branch}"
     end
 
