@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Application version tasks.'
   spec.description   = 'Rake tasks to manage application semantic version.'
-  spec.homepage      = 'https://github.com/sul-dlss/app_version_tasks'
+  spec.homepage      = 'https://github.com/darrenleeweber/app_version_tasks'
 
   spec.files = `git ls-files -z`.split("\x0").reject do |file|
     file.match(/^(bin|config.ru|Gemfile.lock|spec)/)
