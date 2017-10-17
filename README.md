@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/sul-dlss/app_version_tasks.svg?branch=master)](https://travis-ci.org/sul-dlss/app_version_tasks) [![Code Climate](https://codeclimate.com/github/sul-dlss/app_version_tasks/badges/gpa.svg)](https://codeclimate.com/github/sul-dlss/app_version_tasks) [![Test Coverage](https://codeclimate.com/github/sul-dlss/app_version_tasks/badges/coverage.svg)](https://codeclimate.com/github/sul-dlss/app_version_tasks/coverage) [![Issue Count](https://codeclimate.com/github/sul-dlss/app_version_tasks/badges/issue_count.svg)](https://codeclimate.com/github/sul-dlss/app_version_tasks) [![Inline docs](http://inch-ci.org/github/sul-dlss/app_version_tasks.svg?branch=master)](http://inch-ci.org/github/sul-dlss/app_version_tasks) [![Gem Version](https://badge.fury.io/rb/app_version_tasks.svg)](https://badge.fury.io/rb/app_version_tasks)
+[![Build Status](https://travis-ci.org/darrenleeweber/app_version_tasks.svg?branch=master)](https://travis-ci.org/darrenleeweber/app_version_tasks) [![Code Climate](https://codeclimate.com/github/darrenleeweber/app_version_tasks/badges/gpa.svg)](https://codeclimate.com/github/darrenleeweber/app_version_tasks) [![Test Coverage](https://codeclimate.com/github/darrenleeweber/app_version_tasks/badges/coverage.svg)](https://codeclimate.com/github/darrenleeweber/app_version_tasks/coverage) [![Issue Count](https://codeclimate.com/github/darrenleeweber/app_version_tasks/badges/issue_count.svg)](https://codeclimate.com/github/darrenleeweber/app_version_tasks) [![Inline docs](http://inch-ci.org/github/darrenleeweber/app_version_tasks.svg?branch=master)](http://inch-ci.org/github/darrenleeweber/app_version_tasks) [![Gem Version](https://badge.fury.io/rb/app_version_tasks.svg)](https://badge.fury.io/rb/app_version_tasks)
 
 # AppVersionTasks
 
@@ -118,4 +118,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at
-https://github.com/sul-dlss/app_version_tasks
+https://github.com/darrenleeweber/app_version_tasks
