@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'yard'
 
   spec.add_development_dependency 'combustion', '~> 0.7.0'
-  spec.add_development_dependency 'rails', '~> 4.2'
+  spec.add_development_dependency 'rails', '~> 5.1'
   spec.add_development_dependency 'rspec-rails', '~> 3.4', '>= 3.4.2'
   spec.add_development_dependency 'sqlite3'
 
