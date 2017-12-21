@@ -39,7 +39,7 @@ module AppVersionTasks
     def version
       retries ||= 0
       read.match(SEMVER_REGEX)[0]
-    rescue
+    rescue StandardError
       retry if (retries += 1) < 3
       raise 'failed to read and parse version file'
     end
