@@ -54,7 +54,7 @@ describe AppVersionTasks::Configuration do
   end
 
   describe '#version_file_path' do
-    it 'default value is #{default_root_path}/config/version.rb' do
+    it 'default value is {default_root_path}/config/version.rb' do
       path = File.join(root_path, 'config', 'version.rb')
       expect(config.version_file_path).to eq(path)
     end
