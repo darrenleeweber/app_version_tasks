@@ -10,45 +10,64 @@ Rake tasks for application semantic version and release management.  Inspired by
 
 ## Installation
 
-Add this line to your application's Gemfile:
+    $ gem install app_version_tasks
+
+## Configuration for a ruby gem
+
+Add this gem and then `bundle install`:
+
+```ruby
+Gem::Specification.new do |spec|
+  spec.add_development_dependency 'app_version_tasks'
+end
+```
+
+In the `Rakefile`, try this snippet and customize as required.
+
+```ruby
+require 'app_version_tasks'
+spec = Gem::Specification.find_by_name 'app_version_tasks'
+load "#{spec.gem_dir}/lib/tasks/app_version_tasks.rake"
+AppVersionTasks.configure do |config|
+  config.application_name = 'GreatGem'
+  config.version_file_path = File.join('lib', 'great_gem', 'version.rb')
+end
+```
+
+## Configuration for a rails application
+
+Add this gem and `bundle install`:
 
 ```ruby
 gem 'app_version_tasks'
 ```
 
-And then execute:
+In the `Rakefile`, load and configure with this snippet:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install app_version_tasks
-
-## Configuration
-
-In the `Rakefile` for the project, load and configure with this snippet:
-
-    spec = Gem::Specification.find_by_name 'app_version_tasks'
-    load "#{spec.gem_dir}/lib/tasks/app_version_tasks.rake"
-
-    require 'app_version_tasks'
-    AppVersionTasks.configure do |config|
-      # the following settings are the defaults
-      config.application_name = Rails.application.class.parent_name
-      config.version_file_path = File.join(Rails.root, 'config', 'version.rb')
-      config.git_working_directory = Rails.root.to_s
-    end
+```ruby
+require 'app_version_tasks'
+spec = Gem::Specification.find_by_name 'app_version_tasks'
+load "#{spec.gem_dir}/lib/tasks/app_version_tasks.rake"
+AppVersionTasks.configure do |config|
+  # the following settings are the defaults
+  config.application_name = Rails.application.class.parent_name
+  config.version_file_path = File.join(Rails.root, 'config', 'version.rb')
+  config.git_working_directory = Rails.root.to_s
+end
+```
 
 Each of the rake tasks that bump the semantic version will modify an
 application version file; by default, the template for that file looks
 like this:
 
-    # Rails.root/config/version.rb
-    module #{Rails.application.class.parent_name}
-      class Application
-        VERSION = '0.0.0'
-      end
-    end
+```ruby
+# Rails.root/config/version.rb
+module #{Rails.application.class.parent_name}
+  class Application
+    VERSION = '0.0.0'
+  end
+end
+```
 
 If the version file does not exist, it will be created automatically from
 that template.  If it exists already, it is assumed that it contains a
