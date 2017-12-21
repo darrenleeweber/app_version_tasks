@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec-rails', '~> 3.4', '>= 3.4.2'
   spec.add_development_dependency 'sqlite3'
 
-  spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.6'
+  spec.add_development_dependency 'codeclimate-test-reporter', '~> 1.0'
   spec.add_development_dependency 'simplecov', '~> 0.12'
   spec.add_development_dependency 'single_cov', '~> 0.5'
 end
