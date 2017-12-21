@@ -4,9 +4,6 @@ Bundler.setup
 require 'single_cov'
 SingleCov.setup :rspec
 
-require 'codeclimate-test-reporter'
-CodeClimate::TestReporter.start
-
 require 'simplecov'
 SimpleCov.profiles.define 'app_version_tasks' do
   add_filter '.gems'

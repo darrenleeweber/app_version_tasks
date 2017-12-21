@@ -16,7 +16,7 @@ module AppVersionTasks
     def application_name=(value)
       @application_name = begin
         value || Rails.application.class.parent_name
-      rescue
+      rescue StandardError
         'App'
       end
     end
@@ -35,7 +35,9 @@ module AppVersionTasks
 
       # @return [String] path
       def default_root_path
-        Rails.root.to_s rescue Dir.pwd
+        Rails.root.to_s
+      rescue StandardError
+        Dir.pwd
       end
 
       # @return [String] path
