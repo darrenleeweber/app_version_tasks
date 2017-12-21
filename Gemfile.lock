@@ -44,8 +44,6 @@ GEM
     arel (6.0.4)
     ast (2.3.0)
     builder (3.2.3)
-    codeclimate-test-reporter (0.6.0)
-      simplecov (>= 0.7.1, < 1.0.0)
     coderay (1.1.2)
     combustion (0.7.0)
       activesupport (>= 3.0.0)
@@ -171,8 +169,7 @@ PLATFORMS
 
 DEPENDENCIES
   app_version_tasks!
-  bundler (~> 1.12)
-  codeclimate-test-reporter (~> 0.6)
+  bundler (~> 1.16)
   combustion (~> 0.7.0)
   pry
   pry-doc
@@ -188,4 +185,4 @@ DEPENDENCIES
   yard
 
 BUNDLED WITH
-   1.15.4
+   1.16.0

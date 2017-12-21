@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'git', '~> 1.3'
 
-  spec.add_development_dependency 'bundler', '~> 1.12'
+  spec.add_development_dependency 'bundler', '~> 1.16'
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'pry-doc'
   spec.add_development_dependency 'rake', '~> 12.3'
@@ -36,7 +36,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec-rails', '~> 3.4', '>= 3.4.2'
   spec.add_development_dependency 'sqlite3'
 
-  spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.6'
   spec.add_development_dependency 'simplecov', '~> 0.12'
   spec.add_development_dependency 'single_cov', '~> 0.5'
 end
