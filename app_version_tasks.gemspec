@@ -36,5 +36,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'sqlite3'
 
   spec.add_development_dependency 'simplecov', '~> 0.12'
-  spec.add_development_dependency 'single_cov', '~> 0.5'
+  spec.add_development_dependency 'single_cov', '~> 1.0'
 end
